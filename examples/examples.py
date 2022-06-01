@@ -195,7 +195,7 @@ def MakeExample3() :
 	table = Table( TabPS.DEFAULT_WIDTH * 3, TabPS.DEFAULT_WIDTH * 3, TabPS.DEFAULT_WIDTH * 3 )
 	c1 = Cell( Paragraph( 'R1C1' ), thin_frame )
 	c2 = Cell( Paragraph( 'R1C2' ) )
-	c3 = Cell( Paragraph( 'R1C3' ), thick_frame )
+    c3 = Cell( Paragraph( 'R1C3' ), thick_frame, background=2} )
 	table.AddRow( c1, c2, c3 )
 
 	c1 = Cell( Paragraph( 'R2C1' ) )
