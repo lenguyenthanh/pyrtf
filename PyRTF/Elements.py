@@ -555,7 +555,7 @@ class Cell( list ) :
 		self.SetAlignment( kwargs.get( 'alignment', self.ALIGN_TOP  ) )
 		self.SetFlow     ( kwargs.get( 'flow'     , self.FLOW_LR_TB ) )
 		self.SetSpan     ( kwargs.get( 'span',      1               ) )
-		self.SetBg       ( kwargs.get( 'background',      0         ) )
+		self.SetBg       ( kwargs.get( 'background', 0         ) )
 
 		self.SetStartVerticalMerge( kwargs.get( 'start_vertical_merge', False ) )
 		self.SetVerticalMerge     ( kwargs.get( 'vertical_merge',       False ) )

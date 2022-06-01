@@ -607,7 +607,7 @@ class Renderer :
 				for vmerge_idx in range( idx + 1, idx + cell.Span - 1 ) :
 					vmerge[ vmerge_idx ] = False
 
-				settings.append( cell.Bg, 'clcbpat%d')
+				settings.append( cell.Bg, 'clcbpat%d' )
 				settings.append( CellAlignmentMap[ cell.Alignment ] )
 				settings.append( CellFlowMap[ cell.Flow ] )
 
