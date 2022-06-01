@@ -574,12 +574,12 @@ class Renderer :
 
 			#	the spec says that this value is mandatory and I think that 108 is the default value
 			#	so I'll take care of it here
-			settings.append('clcbpat3 ')
 			settings.append( table_elem.GapBetweenCells or 108, 'trgaph%s' )
 			settings.append( TableAlignmentMap[ table_elem.Alignment ] )
 			settings.append( height, 'trrh%s' )
 			settings.append( table_elem.LeftOffset, 'trleft%s' )
 			width = table_elem.LeftOffset or 0
+
 			for idx, cell in enumerate( cells ) :
 				self._RendFramePropertySet  ( cell.Frame,   settings, 'cl' )
 
@@ -607,6 +607,7 @@ class Renderer :
 				for vmerge_idx in range( idx + 1, idx + cell.Span - 1 ) :
 					vmerge[ vmerge_idx ] = False
 
+                settings.append('clcbpat3')
 				settings.append( CellAlignmentMap[ cell.Alignment ] )
 				settings.append( CellFlowMap[ cell.Flow ] )
 
